@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Customermaster.master.cs" Inherits="Customer_Customermaster" %>
+
+<%@ Register assembly="FlashControl" namespace="Bewise.Web.UI.WebControls" tagprefix="Bewise" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 531px;
+            }
+        .style2
+        {
+            height: 159px;
+            width: 571px;
+        }
+        .style4
+        {
+            height: 452px;
+            }
+        .style5
+        {
+            width: 571px;
+            height: 531px;
+        }
+        .style10
+        {
+            height: 159px;
+        }
+        .style14
+        {
+            height: 452px;
+            width: 571px;
+        }
+        .style6
+        {
+            width: 73px;
+            height: 18px;
+        }
+        .style8
+        {
+            width: 57px;
+            height: 18px;
+        }
+        .style15
+        {
+            width: 55px;
+            height: 18px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    .<table style="width: 45%; height: 968px; margin-right: 0px;" bgcolor="#99CCFF" 
+        frame="border" align="left">
+        <tr>
+            <td align="left" class="style2" valign="top" bgcolor="#CCFFFF" scope="col">
+                <asp:Image ID="Image3" runat="server" Height="66px" 
+                    ImageUrl="~/Customer/Image/Untitled-1.jpg" Width="327px" />
+               <Bewise:FlashControl ID="FlashControl5" runat="server" Height="57px" 
+                    MovieUrl="~/flash/KGJGJ.swf" Width="210px" Align="Top" 
+                    AlternativeImage="~/Customer/Image/images85.jpeg" BgColor="#996633" 
+                    Quality="Best" SAlign="BottomRight" Scale="Exactfit" WMode="Transparent" />
+                <asp:Image ID="Image1" runat="server" Height="44px" 
+                    ImageUrl="~/Customer/Image/ss.jpg" Width="567px" />
+                <table bgcolor="#CCFFFF" style="width: 1%; height: 7px;">
+                    <tr>
+                        <td align="center" class="style6" bgcolor="#CCFFFF">
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="28px" 
+                                ImageUrl="~/icon/home_icon_small.png" onclick="ImageButton1_Click" 
+                                ToolTip="HOME" Width="54px" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td align="center" class="style8">
+                            <asp:ImageButton ID="Button7" runat="server" Height="27px" 
+                                ImageUrl="~/icon/control_icon.gif" onclick="Button7_Click1" 
+                                ToolTip="ORDER STATUS" BackColor="#99CCFF" Width="37px" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td align="center" class="style8">
+                            <asp:ImageButton ID="ImageButton3" runat="server" Height="36px" 
+                                ImageUrl="~/icon/about-us-icons.png" onclick="ImageButton3_Click" 
+                                ToolTip="ABOUT US" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td align="center" class="style15">
+                            <asp:ImageButton ID="ImageButton4" runat="server" Height="35px" 
+                                ImageUrl="~/icon/icon_about_us.png" onclick="ImageButton4_Click" 
+                                ToolTip="CONTACT US" Width="37px" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                </table>
+</td>
+            <td class="style10" bgcolor="#CCFFFF" valign="top">
+                <asp:Panel ID="Panel1" runat="server" Height="126px" Width="230px">
+                    &nbsp;<asp:Button ID="Button2" runat="server" BorderStyle="None" 
+                        onclick="Button2_Click" Text="Admin" Width="109px" 
+                        style="margin-left: 0px; height: 22px;" />
+                                        <br />
+                                        <br />
+                                        <asp:Button ID="Button3" runat="server" BorderStyle="None" 
+                        onclick="Button3_Click" Text="Supplier" Width="115px" />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button13" runat="server" BorderStyle="None" Text="." 
+                        Width="115px" />
+                    <br />
+                    <b style="mso-bidi-font-weight:normal">
+                    <span style="font-size:10.0pt;line-height:115%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA" ID="123">Welcome to
+                    <asp:Button ID="Button11" runat="server" BackColor="#CCFFFF" BorderColor="White" 
+                        BorderStyle="None" Font-Underline="True" ForeColor="Blue" 
+                        onclick="Button11_Click" style="margin-left: 0px" Text="Sign in " 
+                        Width="42px" />
+                    or <span style="mso-spacerun:yes"><b style="mso-bidi-font-weight: normal">
+                    <span style="font-size: 10.0pt; line-height: 115%; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+                    <asp:Button ID="Button12" runat="server" BackColor="#CCFFFF" BorderColor="White" 
+                        BorderStyle="None" Font-Underline="True" ForeColor="Blue" 
+                        onclick="Button12_Click" style="margin-left: 0px" Text="Register&nbsp;" 
+                        Width="59px" />
+                    <br />
+                    <asp:Image ID="Image2" runat="server" Height="65px" 
+                        ImageUrl="~/Customer/Image/362x96-2.jpg.gif" 
+                        style="margin-left: 4px; margin-top: 5px" Width="221px" />
+                    </span></b></span></span></b>
+                </asp:Panel>
+            </td>
+        </tr>
+        <tr>
+            <td class="style5" align="left" valign="top">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            <td align="center" class="style1" valign="top" bgcolor="#99CCFF">
+                
+                <Bewise:FlashControl ID="FlashControl4" 
+                    runat="server" Height="265px" 
+                    MovieUrl="~/flash/01.swf" Width="169px" style="margin-left: 43px" 
+                    Quality="Best" SAlign="Top" BgColor="White" Scale="Exactfit" />
+                                <Bewise:FlashControl ID="FlashControl7" 
+                    runat="server" Height="276px" 
+                    MovieUrl="~/flash/123-slideshow_com_80697.swf" Width="172px" 
+                    Scale="Exactfit" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style14" align="left" bgcolor="#99CCFF" valign="top">
+                &nbsp;&nbsp;&nbsp;
+                <Bewise:FlashControl ID="FlashControl6" runat="server" Height="216px" 
+                    MovieUrl="~/flash/13.swf" Width="250px" Scale="Exactfit" 
+                    WMode="Transparent" />
+                <Bewise:FlashControl ID="FlashControl2" runat="server" Height="216px" 
+                    MovieUrl="~/flash/123-slideshow_com_80503.swf" Width="250px" 
+                    style="margin-top: 0px" BgColor="White" Scale="Exactfit" 
+                    WMode="Transparent" />
+                &nbsp;&nbsp;
+                </td>
+            <td class="style4" align="center" bgcolor="#99CCFF" valign="top">
+                
+                <Bewise:FlashControl ID="FlashControl9" 
+                    runat="server" Height="235px" 
+                    MovieUrl="~/flash/01.swf" Width="168px" style="margin-left: 43px" 
+                    Quality="Best" SAlign="Top" Scale="Exactfit" />
+                </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

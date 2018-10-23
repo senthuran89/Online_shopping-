@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode  title="Home">
+    <siteMapNode title="Category">
+           <siteMapNode url="~/Admin/AddCategory.aspx" title="Add Category"  description="One" />
+      <siteMapNode url="~/Admin/EditCategory.aspx" title="Edit Category"  description="Two" />
+    </siteMapNode>
+    <siteMapNode title="Product">
+      <siteMapNode url="~/Admin/AddProduct.aspx" title="Add Product"  description="One" />
+      <siteMapNode url="~/Admin/EditProduct.aspx" title="Edit Product"  description="Two" />
+      <siteMapNode url="~/Admin/AddProductdetails.aspx" title="Add Product Further Details"  description="Two" />
+      <siteMapNode url="~/Admin/EditProductDetails.aspx" title="Edit Product Further Details"  description="Two" />
+    </siteMapNode>
+    <siteMapNode title="Purchase Orders">
+      <siteMapNode url="~/Admin/CheckReorderLevel.aspx" title="Check ReorderLevel"  description="Two" />
+      <siteMapNode url="~/Admin/AddSupplierOrders.aspx" title="Add Orders"  description="One" />
+            <siteMapNode url="~/Admin/ViewOrdes.aspx" title="Recived Orders"  description="Three" />
+    </siteMapNode>
+    <siteMapNode title="Suppliers">
+      <siteMapNode url="~/Admin/AddNewSupplier.aspx" title="Add Supplier"  description="One" />
+      <siteMapNode url="~/Admin/EditSuppliers.aspx" title="Edit Supplier"  description="Two" />
+      <siteMapNode url="~/Admin/SuppliersViewOrders.aspx" title="View Orders"  description="Three" />
+    </siteMapNode>
+    <siteMapNode title="Customers">
+      <siteMapNode url="~/Admin/Orderdetail.aspx" title="Order Details"  description="One" />
+               </siteMapNode>
+    <siteMapNode title="Accounts">
+      <siteMapNode url="~/Admin/accountSummary.aspx" title="Balance Sheet"  description="One" />
+          </siteMapNode>
+    <siteMapNode title="Home Setting">
+      <siteMapNode url="~/Admin/homesetting.aspx" title="Home Setting"  description="One" />
+    </siteMapNode>
+    <siteMapNode title="User Setting">
+      <siteMapNode url="~/Admin/AddNewUser.aspx" title="New user"  description="One" />
+    </siteMapNode>
+  </siteMapNode>
+  </siteMap>

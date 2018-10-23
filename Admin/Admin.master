@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<%@ Register assembly="FlashControl" namespace="Bewise.Web.UI.WebControls" tagprefix="Bewise" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 7px;
+        }
+        .style5
+        {
+            width: 239px;
+            height: 413px;
+        }
+        .style6
+        {
+            height: 413px;
+        }
+        .style7
+        {
+            height: 51px;
+        }
+        .style8
+        {
+            height: 51px;
+            width: 239px;
+        }
+        .style9
+        {
+            height: 29px;
+        }
+        .style10
+        {
+            height: 34px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width: 100%; height: 267px;" bgcolor="#0033CC">
+        <tr>
+            <td bgcolor="#0000CC" class="style2" colspan="2" valign="top" align="left">
+                <asp:Label ID="Label1" runat="server" Text="Eshop  Admin" Font-Bold="True" 
+                    Font-Italic="True" Font-Names="Gigi" Font-Size="XX-Large" ForeColor="Lime" 
+                    Font-Strikeout="True"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCCCCC" class="style8" valign="top" align=" ">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Bewise:FlashControl ID="FlashControl1" runat="server" Height="72px" 
+                    MovieUrl="~/flash/KGJGJ.swf" style="margin-top: 0px" Width="250px" Scale="Exactfit" 
+                                    WMode="Transparent" />
+            </td>
+            <td bgcolor="#CCCCCC" class="style7" valign="bottom" align=" ">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+&nbsp;<br />
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" 
+                    Font-Size="Large" Font-Strikeout="False" Font-Underline="False" 
+                    Text="Load the Admin Page"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label8" runat="server" Text="."></asp:Label>
+&nbsp; 
+                <asp:Label ID="Label9" runat="server" Font-Bold="True" Font-Size="Larger" 
+                    ForeColor="Red" Text="."></asp:Label>
+                <asp:ImageButton ID="Button13" runat="server" 
+                            ImageUrl="~/Customer/Image/logoff_button.png" 
+                    onclick="Button13_Click" Width="98px" Height="18px" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="White" class="style5" valign="top">
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" 
+                    BackColor="#CCCCCC" BorderColor="#0066FF" BorderStyle="Dotted" Font-Bold="True" 
+                    Font-Italic="True" Font-Names="Forte" Font-Size="Large" ForeColor="White" 
+                    Height="414px" ImageSet="BulletedList3" ShowExpandCollapse="False" 
+                    Width="237px" onselectednodechanged="TreeView1_SelectedNodeChanged">
+                    <ParentNodeStyle Font-Bold="False" />
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                        HorizontalPadding="0px" VerticalPadding="0px" />
+                    <DataBindings>
+                        <asp:TreeNodeBinding DataMember="SiteMapNode" NavigateUrlField="Url" 
+                            TextField="Title" ValueField="Description" />
+                        <asp:TreeNodeBinding />
+                        <asp:TreeNodeBinding DataMember="SiteMapNode" NavigateUrlField="Url" 
+                            TextField="Title" ValueField="Description" />
+                    </DataBindings>
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+            <td bgcolor="White" class="style6" valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCCCCC" class="style10" valign="top" colspan="2">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#0000CC" class="style9" valign="top" colspan="2">
+                <asp:Label ID="Label3" runat="server" Font-Bold="False" Font-Italic="True" 
+                    Font-Size="Large" ForeColor="Lime" 
+                    Text="Admin Web Site For Eshop &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; "></asp:Label>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
